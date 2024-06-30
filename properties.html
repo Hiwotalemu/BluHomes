@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BLUHomes</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="media.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav" class="navbar">
+    <div class="container">
+      <div class="logo">BLUHomes</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">About Us</a></li>
+          <li><a href="properties.html">Properties</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="properties">
+    <h2>Our Properties</h2>
+    <div class="property-list">
+      <!-- Property 1 with Image Slider -->
+      <div class="property">
+        <div class="slider">
+          <div class="slides">
+            <img src="./assets/Apt1.png" alt="Cozy Apartment Image 1" class="slide" />
+            <img src="./assets/apt2.png" alt="Cozy Apartment Image 2" class="slide" />
+            <img src="./assets/Apt3.png" alt="Cozy Apartment Image 3" class="slide" />
+          </div>
+          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+          <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+        <h3>Cozy Apartment</h3>
+        <p>Located in the heart of the city, this cozy apartment offers modern amenities and stunning views.</p>
+        <button class="inquire-button" onclick="location.href='#contact'">Inquire</button>
+      </div>
+      <!-- Property 2 -->
+      <div class="property">
+        <img src="./assets/property2.jpg" alt="Property 2" />
+        <h3>Spacious House</h3>
+        <p>Experience luxury living in this spacious house featuring ample outdoor space and elegant interiors.</p>
+        <button class="inquire-button" onclick="location.href='#contact'">Inquire</button>
+      </div>
+      <!-- Property 3 -->
+      <div class="property">
+        <img src="./assets/property3.jpg" alt="Property 3" />
+        <h3>Modern Condo</h3>
+        <p>This modern condo offers convenience and style, with top-notch facilities and a prime location.</p>
+        <button class="inquire-button" onclick="location.href='#contact'">Inquire</button>
+      </div>
+    </div>
+  </section>
+
+  <button id="scrollToTopBtn" onclick="scrollToTop2()">
+    <img src="./assets/arrow-up.png" alt="Scroll to Top" class="icon" />
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> BLUHomes</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="media.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="container">
+      <div class="logo">BLUHomes</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="properties.html">Properties</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">BLUHomes</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <ul>
+          <li><a href="#about" onclick="toggleMenu()">About Us</a></li>
+          <li><a href="properties.html">Properties</a></li>
+          <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>BLUHomes</h1>
+      <p>Your go-to destination for finding your perfect rental property</p>
+      <button class="explore-btn" onclick="location.href='properties.html'">Explore Properties</button>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>BLUHomes is a premier rental property management company dedicated to providing high-quality rental properties
+      and exceptional services to our clients. With years of experience in the real estate industry, we aim to make your
+      renting experience seamless and enjoyable.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-list">
+      <div class="service">
+        <img src="assets/shake.png" alt="Service 1" />
+        <h3>Property Management</h3>
+        <p>We handle all aspects of property management, ensuring your rental property is well-maintained and your tenants
+          are satisfied.</p>
+      </div>
+      <div class="service">
+        <img src="assets/tenat.gif" alt="Service 2" />
+        <h3>Tenant Screening</h3>
+        <p>Our thorough tenant screening process ensures that only reliable and responsible tenants occupy your rental
+          property.</p>
+      </div>
+      <div class="service">
+        <img src="assets/listing.png" alt="Service 3" />
+        <h3>Property Listings</h3>
+        <p>We provide comprehensive property listings with detailed descriptions and high-quality images to attract
+          potential tenants.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Get In Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-form">
+      <form action="mailto:hiwot@vt.com" method="post" enctype="text/plain">
+        <div class="form-group">
+          <label for="name"> Name: </label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email"> Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-color-1">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <button id="scrollToTopBtn" onclick="scrollToTop2()">
+    <img src="./assets/arrow-up.png" alt="Scroll to Top" class="icon" />
+  </button>
+
+  <p class="copyright">Copyright &#169; 2024 Hiwot Alemu. All Rights Reserved.</p>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
